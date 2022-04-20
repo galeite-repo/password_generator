@@ -20,12 +20,17 @@
         <button id="button" onclick="generatePassword()" class="button-cta">Gerar Senha</button>
 
     </main>
-    <div id="container-password" class="container-password hide" onclick="copyPassword()">
+    <div id="container-password" class="container-password hide" for="open" onclick="copyPassword()">
         <span class="title">Sua senha gerada foi: </span>
-        <span id="password" class="password">123123</span>
+        <span id="password" class="password"></span>
         <span class="tooltip">Clique na senha para copiar. 👆</span>
     </div>
 
+
+    <div id="toast"></div>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./script.js"></script>
+    
 </body>
 </html>
